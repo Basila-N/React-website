@@ -1,32 +1,41 @@
 import React, { useState } from "react";
+import { auth } from "../../config/firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import "./Login.css";
 
 const Login = () => {
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!username || !password) {
-      alert("Please fill in all fields!");
+  const signUp = async (e) => {
+    e.preventDefault(); // Prevent form submission reload
+    if (!email || !password) {
+      setMessage("Please fill in all fields.");
       return;
     }
-    console.log("Username:", username, "Password:", password);
+
+    try {
+      await createUserWithEmailAndPassword(auth, email, password);
+      setMessage("Sign-up successful! You can now log in.");
+    } catch (error) {
+      setMessage("Error: " + error.message);
+    }
   };
 
   return (
     <div className="login-box">
-      <h2>𝐋𝐨𝐠𝐢𝐧</h2>
-      <form onSubmit={handleSubmit}>
+      <h2>𝐒𝐢𝐠𝐧 𝐔𝐩</h2>
+      <form onSubmit={signUp}>
         <div className="user-box">
           <input
-            id="username"
-            type="text"
+            id="email"
+            type="email"
             required
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
-          <label htmlFor="username">Username</label>
+          <label htmlFor="email">Email</label>
         </div>
         <div className="user-box">
           <input
@@ -43,9 +52,10 @@ const Login = () => {
           <span></span>
           <span></span>
           <span></span>
-          Submit
+          Sign Up
         </button>
       </form>
+      {message && <p className="auth-message">{message}</p>}
     </div>
   );
 };
