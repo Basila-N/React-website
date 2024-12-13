@@ -1,0 +1,116 @@
+/* General Styling for Feature Section */
+.feature-section {
+    background-color: #131111;
+    padding: 5vw 0;
+}
+
+.feature-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    width: 50px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.sbtn_bttn {
+    background-color: #dfa000;
+    color: #fff;
+    font-size: 0.875rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.sbtn_bttn:hover {
+    background-color: #fff;
+    color: #dfa000;
+    border: 2px solid #dfa000;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    .feature-section {
+        padding: 3vw 1.5vw;
+    }
+
+    .feature-section h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .sbtn_bttn {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+    .feature-section {
+        padding: 2vw 1vw;
+    }
+
+    .feature-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    .sbtn_bttn {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+}

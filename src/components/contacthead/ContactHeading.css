@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+  
+.body4 {
+  height: 100%;
+  width: 100%;
+  background-image: url('../../assets/images/insta-3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+  
+html {
+  scroll-behavior: smooth;
+}
+  
+/* heading section */
+
+.contct_divs {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  padding: 20px; 
+  position: relative;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: 1;
+}
+  
+.contct_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+  
+.contct_title h1 {
+  font-size: 2.5rem; 
+  font-weight: bold;
+  border-bottom: 4px solid #ffc403; 
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.contct_content {
+  text-align: center;
+  max-width: 90%; 
+  padding: 20px 14rem;
+}
+
+.contct_content p {
+  font-size: 1.5rem; 
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .contct_title h1 {
+    font-size: 2rem; 
+  }
+
+  .contct_content {
+    padding: 5px; 
+  }
+
+  .contct_content p {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 576px) {
+  .contct_title h1 {
+    font-size: 2rem; 
+  }
+
+  .contct_content p {
+    font-size: 1rem; 
+  }
+}

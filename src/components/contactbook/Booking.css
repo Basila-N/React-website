@@ -1,0 +1,57 @@
+.table-booking-section {
+  padding: 50px 0;
+  background-color: #fdffe9;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bkg_tble h2 {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+}
+
+
+.bkg_tble h2::after {
+  content: ''; 
+  display: block; 
+  width: 30%; 
+  height: 2px; 
+  background: #fcce03; 
+  margin: 10px auto; 
+}
+
+.booking-form .form-control {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.booking-form .form-group label {
+  font-weight: bold;
+  color: #000000;
+}
+
+.booking-form .btn {
+  background-color: #fafafa;
+  border: none;
+  color: #333;
+  font-weight: bold;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 30px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.booking-form .btn:hover {
+  background-color: #d67903; 
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+  transform: translateY(-2px); 
+  cursor: pointer;
+}
+
+.bkg_tble {
+  max-width: 800px;
+  margin: auto;
+}

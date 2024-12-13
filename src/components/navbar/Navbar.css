@@ -1,0 +1,59 @@
+.navbar {
+    padding: 3px 8px; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand img {
+    height: 40px; 
+}
+
+.navbar-toggler {
+    border-color: #ffb600;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffb600' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.btn-close {
+    filter: invert(400%); 
+}
+
+.btn-close:hover {
+    filter: invert(50%); 
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 16px; 
+    margin: 0 10px;  
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffb600;
+    border-bottom: 2px solid #ffb600;
+}
+
+.offcanvas {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.ss-btn {
+    background: #ffb600;
+    color: #121218;
+    padding: 10px 20px; 
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+}
+
+.ss-btn:hover {
+    background: #FF6F1C;
+    color: white;
+}

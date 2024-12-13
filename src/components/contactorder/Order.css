@@ -1,0 +1,77 @@
+.ftco-section {
+  padding: 60px 0;
+}
+
+.makereservation {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.heading-section {
+  margin-bottom: 40px;
+}
+
+.heading-section h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  border: 2px solid #ddd;
+  padding: 12px;
+  border-radius: 8px; 
+  font-size: 1rem;
+  color: #333;
+  background-color: #fafafa; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #f19204; 
+  box-shadow: 0 4px 10px rgba(241, 146, 4, 0.2); 
+  outline: none;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  display: block;
+  text-transform: uppercase; 
+}
+
+.odr_buttn {
+  background-color: #f19204;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 30px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.odr_buttn:hover {
+  background-color: #d67903; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+  transform: translateY(-2px); 
+  cursor: pointer;
+}
+
+.odr_buttn:active {
+  background-color: #b56303; 
+  transform: translateY(0); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+#order {
+  padding: 60px 0;
+}

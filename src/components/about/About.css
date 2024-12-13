@@ -1,0 +1,137 @@
+/* General Styling */
+.about_sec {
+  background-color: #2d2d31;
+  border-radius: 10px;
+  padding: 40px 20px;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+
+.abt_cnt h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.abt_cnt p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.sbtn_bttn {
+  outline: none;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  background: #dfa000;
+  color: #ffffff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.sbtn_bttn:hover {
+  border-color: #dfa000;
+  background-color: #ffffff;
+  color: #dfa000;
+}
+
+/* Responsive Media Queries */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .about_sec {
+    padding: 30px;
+  }
+
+  .abt_cnt h2 {
+    font-size: 2rem;
+  }
+
+  .abt_cnt p {
+    font-size: 1rem;
+  }
+
+  .sbtn_bttn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .row {
+    flex-direction: column-reverse; /* Place content above the image */
+    text-align: center;
+  }
+
+  .row > .col-md-6 {
+    margin-bottom: 20px;
+  }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+  .about_sec {
+    padding: 20px;
+  }
+
+  .abt_cnt h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .abt_cnt p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .sbtn_bttn {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img.img-fluid {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Extra Small Screens (Very Small Phones) */
+@media (max-width: 480px) {
+  .about_sec {
+    padding: 15px;
+  }
+
+  .abt_cnt h2 {
+    font-size: 1.5rem;
+  }
+
+  .abt_cnt p {
+    font-size: 0.85rem;
+  }
+
+  .sbtn_bttn {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  img.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+}

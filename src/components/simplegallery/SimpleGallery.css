@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.contr1 {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.heading h1 {
+  color: #fff;
+  font-size: 34px;
+  margin: 40px 0;
+}
+
+.heading span {
+  display: block;
+}
+
+.gallery {
+  display: grid; /* Use grid layout instead of flex */
+  grid-template-columns: repeat(3, 1fr); /* Display 3 columns per row */
+  grid-gap: 2rem; /* Add gap between items */
+  margin: 0;
+}
+
+.gallery-item {
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%; /* Full width */
+  height: 18rem; /* Fixed height to reduce image size */
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* For smaller screens, make the grid responsive */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets and smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 column for mobile screens */
+  }
+}

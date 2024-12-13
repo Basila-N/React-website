@@ -1,0 +1,51 @@
+.vw_glry {
+  background: #000000; 
+  padding: 50px 0; 
+}
+
+#gallary1 h1 {
+  position: relative; 
+  margin-top: 100px;
+  text-shadow: 1px 1px 1px black; 
+  font-size: 2.5rem;
+  padding-bottom: 20px; 
+}
+
+#gallary1 h1::after {
+  content: ''; 
+  display: block; 
+  width: 30%; 
+  height: 2px; 
+  background: #a18b0e; 
+  margin: 10px auto; 
+}
+
+
+#gallary1 .card {
+  border: none; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  transition: transform 0.3s ease; 
+}
+
+#gallary1 .card img {
+  width: 100%; 
+  height: auto; 
+  transition: 0.5s ease; 
+}
+
+#gallary1 .card img:hover {
+  transform: translateY(-10px);
+} 
+#gallary1 .card-body {
+  background-color: #222; 
+  text-align: center; 
+  padding: 15px; 
+  border-top: 1px solid #a1970e; 
+}
+
+@media (max-width: 768px) {
+  #gallary1 h1 {
+    font-size: 2rem; 
+  }
+}

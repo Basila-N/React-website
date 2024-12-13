@@ -1,0 +1,99 @@
+.reviews-page {
+    background-color: #333;
+    padding: 5rem 0;
+}
+
+.reviews-page h1 {
+    font-size: 2.5rem;
+    color: #f2f2f2;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+/* Centered Container for Cards */
+.review-cotnr {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+/* Review Card Styling */
+.reviewcard {
+    flex: 0 0 300px; /* Fixed width for equal-sized cards */
+    max-width: 100%; /* Ensure cards do not exceed the container width */
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333333;
+}
+
+.reviewcard:hover {
+    transform: translateY(-5px) scale(1.02); /* Slight scale effect for better hover visibility */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Review Header Styling */
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.review-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #f2aa4c;
+    margin-right: 1rem;
+}
+
+.review-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+
+/* Review Text Styling */
+.review-text {
+    font-size: 1rem;
+    color: #333333;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+/* Star Rating Styling */
+.star-rating i {
+    color: #f2aa4c;
+    font-size: 1.2rem;
+    margin-right: 0.1rem;
+}
+
+.star-rating .bi-star {
+    color: #ddd;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .review-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .review-title {
+        font-size: 1rem;
+    }
+
+    .review-text {
+        font-size: 0.9rem;
+    }
+
+    /* Stack cards on smaller screens */
+    .reviewcard {
+        flex: 0 0 calc(100% - 2rem); /* Full width minus gap */
+        margin-bottom: 1rem; /* Add margin for spacing */
+    }
+}

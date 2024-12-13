@@ -1,0 +1,84 @@
+.enjoy-our-food {
+    padding: 4rem 24px 27px 24px;
+    background: url(../../assets/images/enjoye.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-main-content {
+    width: 40%;
+    border: 2.8px solid white;
+    padding: 2rem;
+}
+
+.food-main-content h1 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.food-main-content p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 0;
+    line-height: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .food-main-content {
+        width: 50%;
+    }
+
+    .food-main-content h1 {
+        font-size: 30px;
+    }
+
+    .food-main-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .food-main-content {
+        width: 60%;
+    }
+
+    .food-main-content h1 {
+        font-size: 28px;
+    }
+
+    .food-main-content p {
+        font-size: 1.1rem;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .enjoy-our-food{
+        height: auto;
+        width: auto;
+    }
+
+    .food-main-content {
+        width: auto;
+    }
+
+    .food-main-content h1 {
+        font-size: 22px;
+    }
+
+    .food-main-content p {
+        font-size: 1rem;
+        line-height: 24px;
+    }
+}
